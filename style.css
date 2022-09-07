@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Editions */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: linear-gradient(290deg, rgb(16, 12, 31), rgb(0, 0, 0) );
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-size: 62.5%;
+    background-size: 100%;
+}
+
+
+.container1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 15%;
+    min-width: 30%;
+    margin-bottom: 5%;
+    font-size: 1rem;
+    
+}
+
+.page-title {
+    text-align: center;
+    color: rgb(16, 12, 31);
+    padding: 1% 1% 1% 1%;
+    background-image: linear-gradient(180deg, rgb(192, 50, 248), rgb(151, 39, 195));
+    font-size: 300%;
+    font-stretch: ultra-expanded;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-subtitle {
+    color: rgb(16, 12, 31);
+    margin: 1% 1% 1% center;
+    padding: 1% 5% 5%px 1%px;
+    font-size: 120%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbe927;
+    font-weight: bold;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, rgb(192, 50, 248), rgb(151, 39, 195) );
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 5px solid #fbe927;
+    border-radius: 5px;
+    margin: auto;
+    color: #fbe927;
+    min-height: 50vh;
+}
+
+.wrapper {
+    width: auto;
+    margin: auto;
+    display: inline-block;
+    width: 80%;
+}
+
+.term1,
+.term2,
+.term3,
+.term4,
+.term5,
+.term6 {
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(16, 12, 31);
+    
+}
+/* Display flex + justify content deixa o conteúdo nas extremidades */
+
+label {
+    text-align: center;
+    background-color: rgba(16, 12, 31, 0.186);
+    border-radius: 2px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+input {
+    display: flexbox;
+    border: none;
+    border-radius: 2px;
+    width: 40px;
+    height: 20px;
+    background-color: rgba(16, 12, 31, 0.21);
+    color: rgb(16, 12, 31);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+
+/*BUTTON*/
+:root {
+    --color-primary-button: rgb(210, 198, 255);
+    --color-secundary-button: rgb(165, 141, 253);
+    --color-thrid-button: rgb(102, 75, 196);
+    
+}
+
+button {
+    background: #fbe927;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background .3s;
+    color: rgb(16, 12, 31);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--color-secundary-button);
+}
+
+button:active {
+    background-color: var(--color-thrid-button);
+}
+
+#calculate {
+    display: block;
+    width: 100px;
+    font: bold 1.10rem monospace;
+    outline: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+}
+
+
+#result {
+    padding: 10%;
+    background-image: linear-gradient(180deg, white, rgb(214, 200, 253));
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    font: 1.2rem sans-serif;
+    padding: auto;
+    text-align: center;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(16, 12, 31);
+    
+}
+
+footer {
+    display: flex;
+    margin: 2% auto;
+   justify-content: center;
+    max-width: 50vh;
+}
+
+.page-logo {
+    width: 130px;
+    margin-left: 20%;
+    display: flex;
+}
+
+.alura-logo {
+   
+    width: 47px;
+    
+    
+}
+
+/* .Calculadora {
+    display: flex;
+    width: 800px;
+    margin: auto;
+    min-height: 400px;
+    position: center bottom;
+} */
